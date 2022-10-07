@@ -7,8 +7,8 @@ import { useKeyboard } from "../hooks/useKeyboard";
 export const Player = () => {
   const { moveForward, moveBackward, moveLeft, moveRight, jump } =
     useKeyboard();
-  const JUMP_FORCE = 10;
-  const SPEED = 10;
+  const JUMP_FORCE = 5;
+  const SPEED = 5;
   const { camera } = useThree();
   const [ref, api] = useSphere(() => ({
     mass: 1,
